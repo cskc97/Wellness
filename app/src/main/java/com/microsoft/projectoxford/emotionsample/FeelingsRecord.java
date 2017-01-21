@@ -1,6 +1,7 @@
 package com.microsoft.projectoxford.emotionsample;
 
 import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -9,10 +10,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class FeelingsRecord extends ActionBarActivity {
 
     Button evaluateButton;
+    Button processButton;
     EditText textEnter;
     public static double sentimentValue = 0.0;
 
@@ -23,6 +26,7 @@ public class FeelingsRecord extends ActionBarActivity {
 
         textEnter = (EditText)findViewById(R.id.editText);
         evaluateButton  = (Button)findViewById(R.id.evaluate_words);
+        processButton = (Button)findViewById(R.id.process_words);
 
         evaluateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +44,30 @@ public class FeelingsRecord extends ActionBarActivity {
 
         IntentFilter intentFilter = new IntentFilter(TextAnalysisService.ACTION_FINISHEDTEXT);
 
-        BroadcastReceiver receiver;
+        BroadcastReceiver receiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if(sentimentValue==0.0)
+                {
+                    Toast.makeText(getApplicationContext(),"Could not complete evaluation - Time out",Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Evaluation Complete: "+String.valueOf(sentimentValue), Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        };
+
+        registerReceiver(receiver,intentFilter);
+
+        processButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(FeelingsRecord.this,DisplayJournalFeelings.class);
+                startActivity(intent);
+            }
+        });
 
 
 

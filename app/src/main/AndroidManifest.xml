@@ -37,9 +37,13 @@
             android:label="@string/title_activity_display_emotions" />
         <activity
             android:name=".FeelingsRecord"
-            android:label="@string/title_activity_feelings_record"></activity>
+            android:label="@string/title_activity_feelings_record" />
 
-        <service android:name=".TextAnalysisService"/>
+        <service android:name=".TextAnalysisService" />
+
+        <activity
+            android:name=".DisplayJournalFeelings"
+            android:label="@string/title_activity_display_journal_feelings"></activity>
     </application>
 
 </manifest>
