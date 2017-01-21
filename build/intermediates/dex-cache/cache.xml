@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.5\686c608d1805b6d4d425ec4459e88164ffc85870\gson-2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.5_31015111f5f2611cecfe555cb07cd0ba079ddb5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\exploded-aar\com.microsoft.projectoxford\emotion\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="85580f7e643f4e319878f282874afccc3b1b95ed">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.microsoft.projectoxford-emotion-1.0.0_41e377120dfe75129080bacb543f58eb2411a2cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_cdcd90fc256fd8da43a0a2b7e1fc77288c6097f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7c1cc5b6f110d13087f0b154b805fb4edf5b9752">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ce8d6d0e4669527d57076ca3b92915a6c94a709d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\libs\java-sdk-3.3.1-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d95dff1034cbed91e45c22cf27ae6edc5e1009ba">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\2\java-sdk-3.3.1-jar-with-dependencies_4489513ba94c7557f05dbe2e3a1d9db5cd0962d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_1e61c0f84396d30e881bf5a89655866f0d707a97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\exploded-aar\com.microsoft.projectoxford\emotion\1.0.0\jars\libs\commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-io-2.4_bfc167d7048a197740d671310c371e22653f2069\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="fc4b00fedf6a071d5fea571bf29b3244a5857162">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_53b65f1c50b21bf8a92e0824a1adc2cc0b0cc1ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_ae2b29a927fa1f20c88fa8164b122d82b7ad5317\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\exploded-aar\com.microsoft.projectoxford\face\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b9885b9cbfc39129a13674d39d0cae321fc0dc97">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.microsoft.projectoxford-face-1.0.0_b0a8767699300dc76f82bb8026ffae1bb61d9bc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\santh\AndroidStudioProjects\Sample\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_eeef80e2149d0698a5dd2b4253fea18adaf17c67\classes.dex" />
+    </item>
+
+</items>
