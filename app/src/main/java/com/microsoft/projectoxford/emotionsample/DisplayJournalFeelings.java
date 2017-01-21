@@ -1,10 +1,12 @@
 package com.microsoft.projectoxford.emotionsample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DisplayJournalFeelings extends ActionBarActivity {
 
@@ -28,6 +30,10 @@ public class DisplayJournalFeelings extends ActionBarActivity {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(getApplicationContext(), "Data Sent to Therapist", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(DisplayJournalFeelings.this,SendTherapist.class);
+                startService(intent);
 
 
             }
@@ -48,11 +54,11 @@ public class DisplayJournalFeelings extends ActionBarActivity {
     {
         scaleTV.setText(String.valueOf(FeelingsRecord.sentimentValue));
 
-        if(FeelingsRecord.sentimentValue < 40)
+        if(FeelingsRecord.sentimentValue < 0.40)
         {
             emotionConclusion = "Negative";
         }
-        else if(FeelingsRecord.sentimentValue>60)
+        else if(FeelingsRecord.sentimentValue>0.60)
         {
             emotionConclusion="Positive";
         }
@@ -61,6 +67,7 @@ public class DisplayJournalFeelings extends ActionBarActivity {
             emotionConclusion = "Neutral";
         }
 
+        conclusionTV.setText(emotionConclusion);
 
 
     }

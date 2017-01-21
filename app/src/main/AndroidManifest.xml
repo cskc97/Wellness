@@ -39,11 +39,16 @@
             android:name=".FeelingsRecord"
             android:label="@string/title_activity_feelings_record" />
 
-        <service android:name=".TextAnalysisService" />
 
         <activity
             android:name=".DisplayJournalFeelings"
-            android:label="@string/title_activity_display_journal_feelings"></activity>
+            android:label="@string/title_activity_display_journal_feelings"/>
+
+
+
+        <service android:name=".TextAnalysisService" />
+        <service android:name=".SendTherapist"/>
+        <service android:name=".GetData"/>
     </application>
 
 </manifest>
