@@ -27,5 +27,6 @@
     <string name="title_activity_display_emotions">DisplayEmotions</string>
     <string name="title_activity_feelings_record">FeelingsRecord</string>
     <string name="title_activity_display_journal_feelings">DisplayJournalFeelings</string>
+    <string name="title_activity_you_tube">YouTube</string>
 
 </resources>

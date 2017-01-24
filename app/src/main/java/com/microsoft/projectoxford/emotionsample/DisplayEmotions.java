@@ -14,6 +14,7 @@ public class DisplayEmotions extends ActionBarActivity {
 
     TextView happinessTV,neutralTV,sadnessTV,disgustTV,fearTV;
     private Button sendTherapist;
+    Button playMusic;
 
     private String POST_URL = "http://192.168.1.67/WellnessDashboard/getdata.php";
 
@@ -29,6 +30,8 @@ public class DisplayEmotions extends ActionBarActivity {
         disgustTV = (TextView)findViewById(R.id.disgust_val);
         fearTV = (TextView)findViewById(R.id.fear_val);
         sendTherapist = (Button)findViewById(R.id.button_therapist);
+        playMusic = (Button)findViewById(R.id.button_playmusic);
+
         happinessTV.setText(String.valueOf(Utility.HAPPINESS));
         neutralTV.setText(String.valueOf(Utility.NEUTRAL));
         sadnessTV.setText(String.valueOf(Utility.SADNESS));
@@ -48,6 +51,14 @@ public class DisplayEmotions extends ActionBarActivity {
                 /*GetDataAsync getDataAsync = new GetDataAsync();
                 getDataAsync.execute();
                 */
+            }
+        });
+
+        playMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DisplayEmotions.this,YouTube.class);
+                startActivity(intent);
             }
         });
 

@@ -38,17 +38,17 @@
         <activity
             android:name=".FeelingsRecord"
             android:label="@string/title_activity_feelings_record" />
-
-
         <activity
             android:name=".DisplayJournalFeelings"
-            android:label="@string/title_activity_display_journal_feelings"/>
-
-
+            android:label="@string/title_activity_display_journal_feelings" />
 
         <service android:name=".TextAnalysisService" />
-        <service android:name=".SendTherapist"/>
-        <service android:name=".GetData"/>
+        <service android:name=".SendTherapist" />
+        <service android:name=".GetData" />
+
+        <activity
+            android:name=".YouTube"
+            android:label="@string/title_activity_you_tube"></activity>
     </application>
 
 </manifest>

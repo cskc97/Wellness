@@ -18,6 +18,8 @@ public class FeelingsRecord extends ActionBarActivity {
     Button processButton;
     EditText textEnter;
     public static double sentimentValue = 0.0;
+    BroadcastReceiver receiver;
+    IntentFilter intentFilter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +44,9 @@ public class FeelingsRecord extends ActionBarActivity {
 
 
 
-        IntentFilter intentFilter = new IntentFilter(TextAnalysisService.ACTION_FINISHEDTEXT);
+        intentFilter = new IntentFilter(TextAnalysisService.ACTION_FINISHEDTEXT);
 
-        BroadcastReceiver receiver = new BroadcastReceiver() {
+        receiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
                 if(sentimentValue==0.0)
@@ -74,4 +76,16 @@ public class FeelingsRecord extends ActionBarActivity {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        unregisterReceiver(receiver);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        registerReceiver(receiver,intentFilter);
+    }
 }
